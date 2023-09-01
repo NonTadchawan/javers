@@ -1,0 +1,30 @@
+### Send POST request with json body
+POST http://localhost:8080/api/store
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "bangkok",
+  "address": {
+    "address": "Bangkok",
+    "zipcode": 11000
+  },
+  "products": [
+    {
+      "id": 102
+    }
+  ]
+}
+### Send POST request with json body
+POST http://localhost:8080/api/product
+Content-Type: application/json
+
+{
+      "name": "Product #1",
+      "id": 101
+}
+
+### GET request with a header
+GET http://localhost:8080/api/store/snapshots
+Accept: application/json
+
